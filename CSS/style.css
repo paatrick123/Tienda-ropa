@@ -150,7 +150,7 @@ main{
     }
 
     .descripcion{
-        margin: 50px 5px 50px;
+        width: auto;
     }
     .descripcion h2{
         font-size: 20px;
@@ -222,7 +222,7 @@ main{
     background-color: var(--color1);
     padding: 30px 30px;
     font-size: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     color:bisque;
 }
 
@@ -279,7 +279,7 @@ main{
         height: auto;
     }
     .boton{
-        display:flex-start;
+        margin: 10px 10px 10px -33px;
         height: auto;
     }
 }
@@ -403,3 +403,17 @@ footer{
         padding: 35px 0px;
     }
 }
+/*
+░░░░░░░░░░░▄▄
+░░░░░░░░░░█░░█
+░░░░░░░░░░█░░█
+░░░░░░░░░█░░░█
+░░░░░░░░█░░░░█
+██████▄▄█░░░░░██████▄
+▓▓▓▓▓█░░░░░░░░░░░░░░█
+▓▓▓▓▓█░░░░░░░░░░░░░░█
+▓▓▓▓▓█░░░░░░░░░░░░░░█
+▓▓▓▓▓█░░░░░░░░░░░░░░█
+▓▓▓▓▓█░░░░░░░░░░░░░░█
+▓▓▓▓▓█████░░░░░░░░░█
+█████▀░░░░▀▀██████▀ */
