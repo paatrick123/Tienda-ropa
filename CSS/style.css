@@ -57,13 +57,21 @@ nav a{
 nav a:hover{
     color:var(--color4)
 }
-
-@media (max-width: 700px){
+@media screen and (max-width: 700px){
     header{
-        flex-direction:column ;
+        flex-direction: column;
+        }
+        nav{
+            padding: 10px 0px;
+        }
+}
+/* dispositivo movil L */
+@media screen and (max-width: 425px){
+    header{
+        flex-direction: column;
     }
     nav{
-        padding: 10px 0px;
+        padding:5px 0px ;
     }
 }
 /* fin del header */
@@ -76,7 +84,7 @@ main{
     justify-content: center;
     justify-content: space-between;
     margin: 0px;
-    padding: 50px 0 0 0;
+    padding: 10px 10px 10px 10px;
 }
 .B1{
     margin:0px;
@@ -111,6 +119,53 @@ main{
     height: 520px;
     width: auto;
 }
+/* tablet */
+@media screen and (max-width: 725px){
+    main{
+        padding:0px 60px;
+    }
+    .main-img img{
+        height: 250px;
+        width: 100%;
+    }
+    .descripcion h2{
+        font-size: 10px;
+    }
+    .descripcion h1{
+        font-size: 40px;
+    }
+}
+/* dispositivo movil L */
+@media screen and (max-width: 425px){
+    .contenedor{
+        padding: 10px 10px 10px 10px;
+    }
+    main{
+        flex-direction: column;
+        padding: 10px 10px 0px 0px;
+    }
+    .main-img img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .descripcion{
+        margin: 50px 5px 50px;
+    }
+    .descripcion h2{
+        font-size: 20px;
+        font-weight: 80px;
+    }
+    .descripcion h1{
+        font-size: 75px;
+        font-weight: 200px;
+    }
+    .descripcion h2{
+        font-size: 20px;
+        font-weight: 200px;
+    }
+}
+
 /* final main */
 /* section */
 .section{
@@ -126,8 +181,8 @@ main{
     width: auto;
 }
 .section img{
-    padding: 20px 20px;
-    border-radius: 70px;
+    padding: 2px 20px;
+    border-radius: 100px;
     height: 300px;
     width: auto;
 }
@@ -160,12 +215,12 @@ main{
     align-items: center;
     margin-top: 26px;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-around;
 }
 .boton a{
     background-color: var(--color1);
-    padding: 20px 24px;
+    padding: 30px 30px;
     font-size: 20px;
     border-radius: 5px;
     color:bisque;
@@ -174,6 +229,59 @@ main{
 
 .boton a:hover{
     color:var(--color2)
+}
+@media screen and (max-width: 700px){
+    .contenedor{
+        padding: 10px 10px 50px 10px;
+    }
+    .section{
+        padding: 0px 50px 100px 50px;
+    }
+    .section-img img{
+        height: 130px;
+        width: 130px;
+    }
+    .section-des{
+        margin:10px 10px 10px ;
+        padding: 10px 0px 50px 1px;
+        height: 100px;
+        width: 100%;
+    }
+    .section-des h1{
+        font-size: 15px;
+        font-weight: 400px;
+}
+    .section-des h2{
+        font-size: 15px;
+        font-weight: 400px;
+    }
+    .section-des h3{
+        font-size: 15px;
+        font-weight: 400px;
+    }
+    }
+    .boton a{
+        padding: 10px 10px 10px 10px 10px;
+        font-size: 10px;
+    }
+    /* dispositivo movil L */
+@media screen and (max-width: 425px){
+    .section{
+        flex-direction: column;
+        padding: 10px 10px 50px 0px;
+    }
+    .section img{
+        height: 300px;
+        width: 300px;
+    }
+    .section a{
+        font-size: 20px;
+        height: auto;
+    }
+    .boton{
+        display:flex-start;
+        height: auto;
+    }
 }
 /* final section1 */
 /* section2 */
@@ -188,7 +296,7 @@ main{
     flex-wrap: inherit;
 }
 
-.block-3{
+.portafolio{
     margin-bottom:100px ;
     padding: 10px 40px;
     background-color:var(--color1);
@@ -204,12 +312,27 @@ main{
     grid-gap: 30px;
 }
 
-.block-3 img{
-    
+.portafolio img{
     height: 250px ;
     width:100% ;
     flex-wrap: wrap-reverse;
     border-radius: 50px;
+}
+@media screen and (max-width: 700px){
+    .contenedor{
+        padding: 40px 40px 40px 40px;
+    }
+    .portafolio img{
+        height: 150px;
+        width: 100%;
+    }
+}
+/* dispositivo movil L */
+@media screen and (max-width: 425px){
+    .cajaMain{
+        grid-template-columns: repeat(1,1fr);
+
+}
 }
 /* fin block3 */
 /* footer */
